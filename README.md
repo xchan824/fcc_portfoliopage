@@ -1,0 +1,1 @@
+FreeCodeCamp portfolio page activity done by xchan824 as practice.
