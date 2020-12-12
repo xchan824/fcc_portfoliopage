@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+        
+            * {
+                box-sizing: border-box;
+            }
+        
+            body {
+                background-color: #BFD2BF;
+                font-family: 'JetBrains Mono', monospace;
+                margin: 0;
+            }
+        
+            nav {
+                background-color: #646F4B; /*46351D*/
+                color: white;
+                display: flex;
+                justify-content: flex-end;
+                padding: 20px;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 100%;
+                z-index: 10;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        
+            nav a {
+                color: white;
+                margin-left: 60px;
+                text-decoration: none;
+            }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+            header {
+                height: 100vh;
+                background-image: url(https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg);
+                background-size: cover;
+                background-position: center center;
+                position: relative;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            header::after {
+                content: '';
+                background-color: black;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                opacity: 0.9;
+            }
+
+            header * {
+                position: relative;
+                z-index: 1;
+            }
+
+            header h1 {
+                font-size: 80px;
+                margin-bottom: 10px;
+                margin-top: 0;
+            }
+
+            header p {
+                font-size: 30px;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            section {
+                text-align: center;
+                padding: 40px;
+            }
+
+            section p {
+                margin-top: 0;
+                font-size: 25px;
+            }
+
+            section h2 {
+                margin: 0;
+                font-size: 40px;
+            }
+
+            .social-noir {
+                background-color: #46351D;
+                color: white;
+            }
+
+            .social-ul {
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                flex-wrap: wrap;
+            }
+
+            .social-ul a {
+                color: white;
+                font-size: 20px;
+                margin: 0 30px;
+                text-decoration: none;
+            }
+
+            .social-ul a:hover {
+                text-decoration: underline;
+            }
+
+            .project-tile {
+                max-width: 300px;
+                margin: 20px;
+            }
+
+            .project-tile:hover {
+                border: 3px solid black;
+            }
+
+            .project-tile img {
+                max-width: 100%;
+            }
+
+            .project-container {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                max-width: 1020px;
+                margin: 20px auto 0;
+            }
+
+            .project-container a {
+                color: black;
+                text-decoration: none;
+            }
+
+            @media (max-width: 450px) {
+                .social-ul {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="#welcome-section">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#social">Socials</a>
+        </nav>
+        
+        <header id="welcome-section">
+            <h1>Hello</h1>
+            <p>My name is xchan</p>
+            <p>a web developer</p>
+        </header>
+        
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project-tile">
+                    <a href="https://osu.ppy.sh" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Osu%21Logo_%282015%29.svg/1200px-Osu%21Logo_%282015%29.svg.png" alt="osu!">
+                        <p>osu!</p>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://osu.ppy.sh" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Osu%21Logo_%282015%29.svg/1200px-Osu%21Logo_%282015%29.svg.png" alt="osu!">
+                        <p>osu!</p>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://osu.ppy.sh" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Osu%21Logo_%282015%29.svg/1200px-Osu%21Logo_%282015%29.svg.png" alt="osu!">
+                        <p>osu!</p>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://osu.ppy.sh" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Osu%21Logo_%282015%29.svg/1200px-Osu%21Logo_%282015%29.svg.png" alt="osu!">
+                        <p>osu!</p>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://osu.ppy.sh" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Osu%21Logo_%282015%29.svg/1200px-Osu%21Logo_%282015%29.svg.png" alt="osu!">
+                        <p>osu!</p>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <a href="https://osu.ppy.sh" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Osu%21Logo_%282015%29.svg/1200px-Osu%21Logo_%282015%29.svg.png" alt="osu!">
+                        <p>osu!</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="social" class="social-noir">
+            <h2>Socials</h2>
+            <p>I am on</p>
+            <ul class="social-ul">
+                <li><a href="https://facebook.com/xchan824" id="profile-link" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/xchan824" id="profile-link" target="_blank">Twitter</a></li>
+                <li><a href="https://github.com/xchan824" id="profile-link" target="_blank">Github</a></li>
+                <li><a href="https://linkedin.com/xchan824" id="profile-link" target="_blank">Linkedin</a></li>
+            </ul>
+        </section>
+    </body>
+</html>
